@@ -1,0 +1,20 @@
+@import "leaflet/dist/leaflet.css";
+@import "tailwindcss";
+
+@theme {
+  --color-darkBg: #0a0b0e;
+  --color-darkCard: #12141c;
+  --color-darkBorder: #1f2430;
+  --color-neonPurple: #a855f7;
+  --color-neonPurpleGlow: #c084fc;
+}
+
+body {
+  background-color: var(--color-darkBg);
+  color: #f3f4f6;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+/*  this smoothly glide Leaflet markers when coordinates update */
+.leaflet-marker-icon {
+  transition: transform 0.6s ease-out !important;
+}
