@@ -1,16 +1,37 @@
-# React + Vite
+# Smart Drone Healthcare Logistics Platform (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive React dashboard built with Tailwind CSS for monitoring, managing, and simulating medical drone logistics operations in real-time. This interface acts as the command and control center for tracking drone telemetry, managing medication delivery requests, and visualizing live flight paths using interactive mapping.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+## Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Live Telemetry Monitoring:** Real-time tracking of drone battery levels, GPS coordinates, speed, and flight status.
+* **Interactive Tactical Map:** Visualizes drone positions and flight routes across designated healthcare delivery zones.
+* **Fleet Management Dashboard:** View comprehensive stats on active flights, available drones, and pending medical requests.
+* **Mission Control Actions:** Direct control triggers to launch drone flights and manage medical payload dispatches.
+* **Responsive UI:** Styled cleanly with Tailwind CSS for optimal operation center viewing.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Tech Stack
+
+* **Framework:** React (Vite)
+* **Styling:** Tailwind CSS
+* **Mapping/Visuals:** React-Leaflet / Mapbox integration
+* **Communication:** REST APIs & WebSockets for live backend telemetry streams
+
+
+
+##  Getting Started
+
+Follow these steps to set up and run the frontend locally on your machine.
+
+### Prerequisites
+Make sure you have **Node.js** installed on your system.
+
+### Installation & Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/OLAMI-2006/dronefrontend.git](https://github.com/OLAMI-2006/dronefrontend.git)
