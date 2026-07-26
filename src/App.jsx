@@ -49,7 +49,7 @@ function App() {
             });
         } else if (!newWeather.isSevere && weatherAlert) {
             setWeatherAlert(false);
-            toast.success('✅ Airspace clear. Normal drone operations resumed.', {
+            toast.success(' Airspace clear. Normal drone operations resumed.', {
                 duration: 4000
             });
         }

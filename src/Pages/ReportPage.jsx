@@ -116,7 +116,7 @@ export default function ReportsView({ reportsData = [] }) {
 
     return (
         <div className="space-y-6">
-            {/* Header & Export Actions */}
+
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-darkBorder pb-4">
                 <div>
                     <h2 className="text-xl font-bold text-white tracking-wide flex items-center gap-2">
@@ -126,7 +126,6 @@ export default function ReportsView({ reportsData = [] }) {
                     <p className="text-xs text-gray-400">Comprehensive analytics, mission audits, and document exports</p>
                 </div>
 
-                {/* Export Buttons */}
                 <div className="flex items-center gap-2.5">
                     <button
                         onClick={handleExportCSV}
@@ -143,7 +142,7 @@ export default function ReportsView({ reportsData = [] }) {
                 </div>
             </div>
 
-            {/* Time Filter Bar */}
+
             <div className="flex items-center justify-between bg-[#121218] border border-[#2a2a3c] rounded-2xl p-4 shadow-xl">
                 <div className="flex items-center gap-2 text-xs text-gray-400">
                     <Calendar size={16} className="text-neonPurple" />
@@ -166,7 +165,7 @@ export default function ReportsView({ reportsData = [] }) {
                 </div>
             </div>
 
-            {/* Metrics Grid */}
+
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 <div className="bg-[#121218] border border-[#2a2a3c] rounded-2xl p-4 flex items-center justify-between shadow-xl">
                     <div>
@@ -209,7 +208,6 @@ export default function ReportsView({ reportsData = [] }) {
                 </div>
             </div>
 
-            {/* Reports Table */}
             <div className="bg-[#121218] border border-[#2a2a3c] rounded-2xl overflow-hidden shadow-2xl">
                 <div className="p-4 border-b border-[#2a2a3c] flex items-center justify-between">
                     <h3 className="text-sm font-bold text-white flex items-center gap-2">
