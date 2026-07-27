@@ -76,7 +76,7 @@ export function DroneDashboard({ drones = [] }) {
             id: 1,
             serialNumber: 'DRONE-ALPHA-01',
             status: 'FLYING',
-            destination: 'Atoro Hospital',
+            destination: 'Ayetoro Hospital',
             latitude: 6.5244,
             longitude: 3.3792,
             batteryCapacity: 88,
@@ -99,7 +99,7 @@ export function DroneDashboard({ drones = [] }) {
 
     const getHoverDestinationText = (drone) => {
         if (drone.status === 'FLYING') {
-            return `Destination: ${drone.destination || 'Atoro Hospital'}`;
+            return `Destination: ${drone.destination || 'Ayetoro Hospital'}`;
         } else if (drone.status === 'CHARGING' || drone.status === 'IDLE') {
             return 'Location: Base (Charging)';
         } else if (drone.status === 'MAINTENANCE') {
@@ -159,7 +159,7 @@ export function DroneDashboard({ drones = [] }) {
                                         </strong>
                                         <div className="text-xs mt-1 space-y-0.5">
                                             <p><strong>Status:</strong> {drone.status || 'UNKNOWN'}</p>
-                                            <p><strong>Target:</strong> {drone.destination || 'Atoro Hospital / Trauma Clinic'}</p>
+                                            <p><strong>Target:</strong> {drone.destination || 'Ayetoro Hospital / Trauma Clinic'}</p>
                                             <p><strong>Battery:</strong> {drone.batteryCapacity ?? 100}%</p>
                                             <p className="font-mono text-[10px] text-gray-600 mt-1">
                                                 {drone.latitude.toFixed(4)}, {drone.longitude.toFixed(4)}
