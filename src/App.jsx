@@ -10,7 +10,7 @@ import ClientOrderingPortal from './components/ClientOrderingPortal.jsx';
 import WeatherWidget from './components/WeatherWidget.jsx';
 import IntroCanvas from './components/IntroCanvas.jsx';
 import { useDroneTelemetry } from './hooks/useDroneTelemetry.js';
-import FleetDashboard from './pages/FleetDashboard.jsx';
+import FleetDashboard from './Pages/FleetDashboard.jsx';
 import InventoryPage from './Pages/InventoryPages.jsx';
 import ReportsPage from './Pages/ReportPage.jsx';
 import FlightSimulatorPage from './Pages/FlightSimulatorPage.jsx';
@@ -43,7 +43,7 @@ function App() {
     const handleWeatherChange = (newWeather) => {
         if (newWeather.isSevere && !weatherAlert) {
             setWeatherAlert(true);
-            toast.error(`⚠️ Weather Alert: ${newWeather.condition} detected in Lagos airspace. Flight dispatches restricted!`, {
+            toast.error(` Weather Alert: ${newWeather.condition} detected in Lagos airspace. Flight dispatches restricted!`, {
                 duration: 6000,
                 position: 'top-center'
             });
