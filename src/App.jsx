@@ -11,9 +11,9 @@ import WeatherWidget from './components/WeatherWidget.jsx';
 import IntroCanvas from './components/IntroCanvas.jsx';
 import { useDroneTelemetry } from './hooks/useDroneTelemetry.js';
 import FleetDashboard from './pages/FleetDashboard.jsx';
-import InventoryPage from './pages/InventoryPages.jsx';
-import ReportsPage from './pages/ReportPage.jsx';
-import FlightSimulatorPage from './pages/FlightSimulatorPage.jsx';
+import InventoryPage from './Pages/InventoryPages.jsx';
+import ReportsPage from './Pages/ReportPage.jsx';
+import FlightSimulatorPage from './Pages/FlightSimulatorPage.jsx';
 
 const initialDrones = [
     { id: 1, serialNumber: 'DRONE-DL-77', status: 'FLYING', destination: 'Atoro Hospital', batteryCapacity: 81, latitude: 6.4700, longitude: 3.3400 },
