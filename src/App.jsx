@@ -16,7 +16,7 @@ import ReportsPage from './Pages/ReportPage.jsx';
 import FlightSimulatorPage from './Pages/FlightSimulatorPage.jsx';
 
 const initialDrones = [
-    { id: 1, serialNumber: 'DRONE-DL-77', status: 'FLYING', destination: 'Atoro Hospital', batteryCapacity: 81, latitude: 6.4700, longitude: 3.3400 },
+    { id: 1, serialNumber: 'DRONE-DL-77', status: 'FLYING', destination: 'Ayetoro Hospital', batteryCapacity: 81, latitude: 6.4700, longitude: 3.3400 },
     { id: 2, serialNumber: 'DRONE-DL-89', status: 'IDLE', destination: 'Base', batteryCapacity: 95, latitude: 6.5400, longitude: 3.3900 },
     { id: 3, serialNumber: 'DRONE-DL-12', status: 'CHARGING', destination: 'Base', batteryCapacity: 42, latitude: 6.5100, longitude: 3.3600 },
     { id: 4, serialNumber: 'DRONE-DL-04', status: 'MAINTENANCE', destination: 'Hardware Workshop', batteryCapacity: 15, latitude: 6.5300, longitude: 3.3850 },
