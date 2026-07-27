@@ -1,13 +1,13 @@
-import   'react';
+import React from 'react';
 import { Battery, BatteryCharging, Navigation, Send, MoreVertical } from 'lucide-react';
 
 export default function DroneTable({ drones = [] }) {
     const MIN_BATTERY_FOR_LAUNCH = 20;
-
+    const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080';
 
     const handleTakeoff = async (droneId) => {
         try {
-            const response = await fetch(`http://localhost:8080/api/drones/${droneId}/takeoff`, {
+            const response = await fetch(`${API_BASE_URL}/api/drones/${droneId}/takeoff`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ targetLat: 6.5244, targetLng: 3.3792 })
@@ -166,7 +166,6 @@ export default function DroneTable({ drones = [] }) {
                                 {drone.latitude?.toFixed(4)}, {drone.longitude?.toFixed(4)}
                             </td>
                             <td className="py-3.5 px-4 text-right flex items-center justify-end gap-2">
-                                {/* Uniform action button with arrow icon for all statuses */}
                                 {renderActionButton(drone)}
 
                                 <button className="p-1.5 rounded-lg hover:bg-darkBg text-gray-400 hover:text-white transition-colors">
